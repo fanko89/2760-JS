@@ -1,27 +1,60 @@
+<!--https://derek-dgm2760.netlify.app/unit_03/-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <title>05 Inspector Clouseau</title>
+    <title>03 guessing game</title>
 </head>
-<body onresize="readDisplay()">
+<body>
     <header>
         <h1></h1>
         <h2></h2>
     </header>
 <main>
-    <h1>Inspector Clouseau</h1>
-    <h2>what I learned</h2>
+    <h1 id="head">Hi/Lo Guessing Game</h1>
+    <h2 id="sub">what I learned</h2>
     <ul class="objectives">
-        <li>Display Windows Properties</li>
-        <li>Display Document Properties</li>
+        <li>Implement functions</li>
+        <li>Implement a multi level if-then-else</li>
+        <li>Use innerText to provide user feedback</li>
+        <li>Dynamically load a graphic</li>
+        <li>Create and append an image element</li>
     </ul>
-    <h2>Window Properties</h2>
-    <p id="myWindow"></p>
-    <h2>Document Properties</h2>
-    <p id="myDocument"></p>
+    <h2 id="sub">Instructions</h2>
+    <p>In this game you try to guess a random number between 1 and 15 in as few tries as possible. You will be awarded a ribbon for your skills. Good Luck to you. If you would like to play again, refresh the page.</p>
+
+    <div class="game">
+    <div class ="a1">
+        <h2>Play</h2>
+        <hr>
+    <div class="value">
+        <input id="guess" type="number" placeholder="number"/>
+        <br>
+        <button onclick="evalGuess()">Guess</button>
+    </div>
+</div>
+
+    <div class="a2">
+        <h2>Trys</h2>
+        <hr>
+        <div id="attempts"></div>
+    </div>
+
+    <div class="a3">
+        <h2>Feedback</h2>
+        <hr>
+        <div id="feedback"></div>
+    </div>
+
+    <div class="a4">
+        <h2>Award</h2>
+        <hr>
+        <div id="ribbon"></div>
+    </div>
+</div>
+
 </main>
 <footer>
     <p>Assignment for DGM 2760 Derek Ney</p>
@@ -30,3 +63,7 @@
 </body>
 <script type="text/javascript" src="js/main.js"></script>
 </html>
+
+
+
+            
