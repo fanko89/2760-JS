@@ -1,0 +1,28 @@
+body{
+    margin: auto;
+    max-width: 960px;
+}
+header {
+    
+    margin: 0 auto;
+   background-image: url("../img/inspector.jpg");
+   height: 200px;
+   color: white;
+   text-shadow: 2px 2px 0px #FF0000; 
+}
+
+ul {
+    padding: 0 4rem;
+    font-size: 20px;
+}
+
+footer {
+    background-color: burlywood;
+    text-align: center;
+    padding: .1rem 2%;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 auto;
+    color: white;
+}

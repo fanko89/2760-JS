@@ -1,0 +1,52 @@
+body{
+    margin: auto;
+    max-width: 960px;
+
+}
+header {
+    
+    margin: 0 auto;
+   background-image: url("../img/inn.jpg");
+   height: 300px;
+   color: white;
+   text-shadow: 2px 2px 0px #FF0000; 
+
+}
+#company{
+    padding:2rem 2% 0 2% ;
+
+}
+#slogan{
+    padding: 0 2% ;
+
+}
+#love {
+    padding: 1rem 2% 0 2%;
+color:#FF0000;
+font-size: 36px;
+}
+ul {
+    padding: 0 4rem;
+    font-size: 20px;
+}
+#date {
+    padding: 0 2% 2rem 2%;
+    color:#FF0000;
+    
+    }
+#greeting{
+    padding: 1rem 3rem;
+    font-size: 20px;
+
+}
+
+footer {
+    background-color: burlywood;
+    text-align: center;
+    padding: .1rem 2%;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 auto;
+    color: white;
+}
