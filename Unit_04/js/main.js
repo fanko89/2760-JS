@@ -9,7 +9,7 @@ function getMonthName(month) {
     let name 
     switch (month) {
         case 1:
-            name = "january"
+            name= "january"
             break;
         case 2:
             name= "Febuary"
@@ -45,7 +45,7 @@ function getMonthName(month) {
             name= "December"
             break;
         default:
-            name = "not a month"
+            name= "not a month"
             break;
     }
 return name
@@ -88,10 +88,10 @@ function getFortune(fate) {
             message= 'Nothing will change in your life rest of your days!'
             break;
         case 12:
-            message: 'Someone will give you one of George W Bush\'s painting for free!'
+            message= 'Someone will give you one of George W Bush\'s painting for free!'
             break;
         default:
-            message: 'Error! Please try again.'
+            message= 'Error! Please try again.'
             break;
     }
     return message
