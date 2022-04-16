@@ -32,7 +32,6 @@ h1 {
 #sub2 {
     color:green;
     padding-top:1rem;
-
 }
 
 ul.objectives li {
@@ -83,12 +82,43 @@ button {
     color:black;
     font-size: 16px;
     text-align: center;
-
 }
+
+aside {
+    padding: 3rem 0 10px 10px;
+}
+aside h2{
+    color: green;
+}
+#displayResults{
+    background-color: lightgray;
+}
+
+aside #errorMes{
+    color: green;
+}
+#error {
+    background-color: yellow;
+    color: red;
+}
+
+aside #displayLine{
+border-top-style: solid;
+border-bottom-width: .02px;
+color:lightgray;
+}
+
+aside #errorLine{
+    border-top-style: solid;
+    border-bottom-width: .02px;
+    color:yellow;
+    }
+    
+
 
 /*footer*/
 footer {
-    background-color:blue;
+    background-color:green;
     text-align: center;
     padding: .1rem 2%;
     font-size: 18px;
