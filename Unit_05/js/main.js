@@ -4,7 +4,6 @@ const errorElement = document.querySelector('#error')
 const displayReuslts = document.querySelector('#displayResults')
 
 
-errorElement.textContent = 'hello'
 
 //display the list of trees inside the displayResults div
 const listTrees = () => {
@@ -39,20 +38,26 @@ const listTrees = () => {
 
  //remove the first tree from the list
  document.querySelector('#remove_tree1').onclick = () => {
+     if(trees.length>0){
     trees.shift()
     listTrees()
+     }else{errorElement.textContent ='no trees to remove!'}
 }
 
  //remove from the second tree down
  document.querySelector('#remove_tree2').onclick = () => {
+     if (trees.length >1){
     trees.splice(1, 1);
     listTrees()
+     }else{errorElement.textContent ='no second trees to remove!'}
 }
 
- //remove from the second tree down
+ //remove from the last tree down
  document.querySelector('#remove_treeLast').onclick = () => {
+    if (trees.length >0){
     trees.pop();
     listTrees()
+    }else{errorElement.textContent ='no last trees to remove!'}
 }
 
  //sort the list of trees
@@ -60,3 +65,26 @@ const listTrees = () => {
     trees.sort();
     listTrees()
 }
+
+ //lowercase the list of trees
+ document.querySelector('#lowerTrees').onclick = () => {
+        let lowerCas =[]
+        lowerCas = trees.map(tree => tree.toLowerCase())
+        trees.splice(0, lowerCas.length, ...lowerCas)
+        listTrees()
+    } 
+
+
+ //name of tree number 3
+ document.querySelector('#showName_3').onclick = () => {
+    if (trees.length > 2) {
+        errorElement.textContent = trees[2]
+    } else {errorElement.textContent = 'no 3rd tree'}
+ }
+
+ //name of tree number 4
+ document.querySelector('#showName_4').onclick = () => {
+    if (trees.length > 3) {
+        errorElement.textContent = trees[3]
+    } else {errorElement.textContent = 'no 4th tree'}
+ }
