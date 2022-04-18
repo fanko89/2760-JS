@@ -1,43 +1,39 @@
-body{
-    margin: auto;
-    max-width: 900px;
+/*CSS Document*/
+body h1, h2, h3, h4, h5, h6, ul, li {
+    margin:0;
 }
-header {
-    
+header,body, main, footer {
+    max-width: 900px;
     margin: 0 auto;
-   background-image: url("../img/gaming.jpg");
+}
+
+/*header*/
+header {  
+    margin: 0 auto;
+   background-image: url("../img/peterRabbit.jpg");
    height: 200px;
    color: white;
    text-shadow: 2px 2px 0px #363636; 
 }
+
 header h1, h2{
     padding-left: 10px;
 }
 
-h1 {
-    padding-left: 10px;
+/*main*/
+main #head {
+    color:darkolivegreen;
+    padding-top: 1rem;
+}
+main #sub {
+    color:darkolivegreen;
+    padding: 1rem 0 .5rem 0;
 }
 
-.game {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: .5rem 0;
-}
-.game h2{
-    color: rgb(0, 0, 0);
-    padding: 0 3.5rem;
-    text-align: center; 
-}
 
-.a1, .a2, .a3, .a4{    
-    text-align: center;
-    background-color: rgb(211, 211, 211);
-    padding: 10px 1px;
-}
-
-#guess{
-    margin-bottom: 1rem;
+/*check box*/
+ul {
+    padding-bottom: 2rem;
 }
 
 ul.objectives li {
@@ -51,7 +47,7 @@ ul.objectives li {
 ul.objectives li:before {
   content: " "; 
   display: block;
-  border: solid 0.8em #3eae2a;
+  border: solid 0.8em darkolivegreen;
   border-radius: .2em;
   height: 0;
   width: 0;
@@ -78,16 +74,37 @@ ul.objectives li:after {
   transform: rotate(45deg);
 }
 
-
-#head {
-    color:blue;
+/*program*/
+main section {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
 }
-#sub {
-    color:blue;
+
+main section div{
+    color:darkolivegreen;
 }
 
+main section h1{
+    color:darkolivegreen;
+}
+
+
+
+main #paragraph{
+    padding-top: 1rem
+    
+}
+
+main #paragraph button{
+    padding:.5rem 1rem;
+    
+}
+
+
+/*footer*/
 footer {
-    background-color: blue;
+    background-color: darkolivegreen;
     text-align: center;
     padding: .1rem 2%;
     font-size: 18px;
