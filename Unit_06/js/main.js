@@ -12,7 +12,5 @@ const myStory = `Once upon a time there were 3 ${nounArray[0]}s named Kit, Kyle,
 
 //get a reference to the querSelector('#story') = myStory
 let sResults = document.querySelector('#story')
-sResults.innerText = myStory
+sResults.innerHTML = myStory
 }
-
-tellStory()
