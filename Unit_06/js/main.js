@@ -8,7 +8,7 @@ function tellStory() {
     const verbArray = vString.split(/\s+/g)
 
 
-const myStory = `Once upon a time there were 3 ${nounArray[0]}s named Kit, Kyle, and Sam. They ${verbArray[0]} to ${nounArray[1]} everyday to see if there were ${nounArray[2]}, but never ${adjArray[0]} what they needed. One day after ${nounArray[3]}, they ${adjArray[1]} a new ${nounArray[4]} before their parents found out. Never did they believe it would happen to them. Kit was the first to take the ${nounArray[5]} home and ${verbArray[1]} all the way to her house. Sam and Kyle never got to take the ${nounArray[6]} home with them.`
+const myStory = `Once upon a time there were 3 <strong>${nounArray[0]}s</strong> named Kit, Kyle, and Sam. They <strong>${verbArray[0]}</strong> to <strong>${nounArray[1]}</strong> everyday to see if there were <strong>${nounArray[2]}</strong>, but never <strong>${adjArray[0]}</strong> what they needed. One day after <strong>${nounArray[3]}</strong>, they <strong>${adjArray[1]}</strong> a new <strong>${nounArray[4]}</strong> before their parents found out. Never did they believe it would happen to them. Kit was the first to take the <strong>${nounArray[5]}</strong> home and <strong>${verbArray[1]}</strong> all the way to her house. Sam and Kyle never got to take the <strong>${nounArray[6]}</strong> home with them.`
 
 //get a reference to the querSelector('#story') = myStory
 let sResults = document.querySelector('#story')
