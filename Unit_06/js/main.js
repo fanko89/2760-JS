@@ -7,15 +7,12 @@ function tellStory() {
     const adjArray = aString.split(/\s+/g)
     const verbArray = vString.split(/\s+/g)
 
-    let sResults = document.querySelector('#story')
-
 
 const myStory = `Once upon a time there were 3 ${nounArray[0]}s named Kit, Kyle, and Sam. They ${verbArray[0]} to ${nounArray[1]} everyday to see if there were ${nounArray[2]}, but never ${adjArray[0]} what they needed. One day after ${nounArray[3]}, they ${adjArray[1]} a new ${nounArray[4]} before their parents found out. Never did they believe it would happen to them. Kit was the first to take the ${nounArray[5]} home and ${verbArray[1]} all the way to her house. Sam and Kyle never got to take the ${nounArray[6]} home with them.`
 
-
+//get a reference to the querSelector('#story') = myStory
+let sResults = document.querySelector('#story')
 sResults.innerText = myStory
-
 }
 
 tellStory()
-//get a reference to the querSelector('#story') = myStory
