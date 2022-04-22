@@ -13,9 +13,9 @@ topList.forEach(menuItem => {
     newLink.setAttribute('href', menuItem.getAttribute('href'))
     //'copy' the textContent from upper menu to new nemu
        // append children to make them appear in the DOM
-    document.querySelector('#smallNavArea').appendChild(newList)
     newLI.appendChild(newLink)
     newList.appendChild(newLI)
+    document.querySelector('#smallNavArea').appendChild(newList)
     newLink.textContent = menuItem.innerText 
 
 
