@@ -1,0 +1,125 @@
+/*CSS Document*/
+body h1, h2, h3, h4, h5, h6, ul, li {
+    margin:0;
+}
+header,body, main, footer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/*header*/
+header {  
+    margin: 0 auto;
+   background-image: url("../img/tomb.png");
+   height: 200px;
+   color: white;
+   text-shadow: 0px 0px 28px #363636; 
+}
+
+header h1, h2{
+    padding-left: 10px;
+}
+
+/*main*/
+main #head {
+    color:saddlebrown;
+    padding-top: 1rem;
+}
+main #sub {
+    color:saddlebrown;
+    padding: 1rem 0 .5rem 0;
+}
+
+/*check box*/
+ul {
+    padding-bottom: 2rem;
+}
+
+ul.objectives li {
+  font-size: 16px; 
+  list-style-type: none; 
+  margin-bottom: .5em; 
+  padding: 0.25em 0 0 2.5em; 
+  position: relative;
+}
+
+ul.objectives li:before {
+  content: " "; 
+  display: block;
+  border: solid 0.8em saddlebrown;
+  border-radius: .2em;
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: 0.5em;
+  top: 40%; 
+  margin-top: -0.5em;
+}
+
+ul.objectives li:after {
+  content: " ";
+  display: block;
+  width: 0.3em; 
+  height: 0.6em;
+  border: solid white;
+  border-width: 0 0.2em 0.2em 0;
+  position: absolute;
+  left: 1em;
+  top: 40%;
+  margin-top: -0.2em;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*program*/
+main section {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    flex-direction: column;
+}
+
+#stem {
+    background-color: brown;
+    color:white;
+    padding:10px 10px;
+}
+main section button{
+ padding:10px 0px 10px 5px;
+ text-align: left;
+ 
+}
+main section .feedback{
+    padding:15px 0px 0px 10px;
+
+    
+   }
+   ma
+main section h2{
+    color:saddlebrown;
+    padding-top: 20px;  
+}
+
+main section h1{
+    color:saddlebrown;
+}
+
+main section .feedback{
+    background-color: #363636;
+    height: 40px;
+    color: white;  
+}
+
+/*footer*/
+footer {
+    background-color: saddlebrown;
+    text-align: center;
+    padding: .1rem 2%;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 30px auto;
+    color: white;
+}
