@@ -89,7 +89,7 @@ main section p {
 }
 
 main section h2{
-    color:darkred;
+    color:black;
     padding-top: 20px;  
 }
 
@@ -102,14 +102,39 @@ main section h3{
 main section h1{
     color:darkred;
 }
-main section ul{
-    display: flex;
 
-        list-style-type: none;
+
+main section .buttons{
+    width: 600px;
+
+}
+
+    main section ul {
+     text-align: center;
+      
+        list-style: none;
+        margin:0;
+        padding: 0;
+    }
+    main section div {
+        background-color: darkred;
+    }
+
+
+main section ul li{
+    float:left;
+    border-right: solid 1px rgba(0,0,0,0.3); 
 }
 main section ul li a{
-    color:white;
-    background-color: darkred;
+    display:block;
+    color: rgba(255,255,255,0.9);
+    font-size: 1em;
+    padding: 15px 27px;
+    font-weight: bold;
+    text-decoration:none;
+}
+main section ul li a:hover{
+    color: rgba(0,0,0,0.8);
 }
 
 

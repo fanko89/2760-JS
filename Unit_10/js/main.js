@@ -2,33 +2,38 @@
 document.querySelector('header > h1').innerText = "Hotel California"
 document.querySelector('header > h2').innerText = "You can never leave"
 
-const question = {
-    stem: "who is buried in grant's tomb?",
-    option1: "Tom",
-    option2: "Grant",
-    option3: "Larry",
-    option4: "Jake",
-    correct: 2,
-    display: () => {
-        document.querySelector('#stem').textContent = question.stem
-        document.querySelector('#answer1').textContent = question.option1
-        document.querySelector('#answer2').textContent = question.option2
-        document.querySelector('#answer3').textContent = question.option3
-        document.querySelector('#answer4').textContent = question.option4
-        // dispay the question options here
-    },
-    check: (userChoice) => {
-        if (userChoice === question.correct){
-            document.querySelector(".feedback").textContent = "you are correct!"
-        }
-        else {document.querySelector(".feedback"). textContent = "please try again"}
-        }
-            //else
-        }
+//async await function for fetching data 
+async function getHotelData(){
+    try{
+     const response = await fetch('hotel.json')
+     return await response.json() // build-in function that returns the JSON object   
+    } catch (error) {
+        console.error(error)
+    }
+}
+//gives access to the hotel data
+let hotelData = {}
+getHotelData().then(data => hotelData = data)
 
-document.querySelector('#answer1').addEventListener('click', () =>{question.check(1)})
-document.querySelector('#answer2').addEventListener('click', () =>{question.check(2)})
-document.querySelector('#answer3').addEventListener('click', () =>{question.check(3)})
-document.querySelector('#answer4').addEventListener('click', () =>{question.check(4)})
+//let hotelSelect = document.querySelectorAll('a')
+//hotelSelect.forEach(list => {
+ // let item = document.createElement ('a')
 
-question.display()
+document.querySelector("#marriott").addEventListener("click", hotelInfo)
+document.querySelector("#sheraton").addEventListener("click", hotelInfo)
+document.querySelector("#hilton").addEventListener("click", hotelInfo)
+
+    
+//event is the ckick event
+function hotelInfo(event) {
+    let hotelChoice = hotelData.hotels.find(hotel => {
+        return event.target.id === hotel.name.toLowerCase()
+    })
+
+document.querySelector("#hotelName").textContent = `${hotelChoice.name} hotel`
+document.querySelector("#address").textContent = hotelChoice.address
+document.querySelector("#rooms").textContent = hotelChoice.rooms
+document.querySelector("#gym").textContent = hotelChoice.gym
+document.querySelector("#type").textContent = hotelChoice.roomTypes
+document.querySelector("#picture").src = hotelChoice.picture
+}

@@ -1,0 +1,28 @@
+{
+    "hotels": [
+        {
+            "name": "Marriott",
+            "rooms": "50",
+            "gym": "Yes",
+            "roomTypes": ["king", "Queen", "Double"],
+            "address": "258 broad Street",
+            "picture": "img/room1.jpg"
+        },
+
+        {"name": "sheraton",
+        "rooms": "23",
+        "gym": "No",
+        "roomTypes": ["Large", "Medium", "Small"],
+        "address": "123 S 400 W",
+        "picture": "img/room1.jpg"
+        },
+
+        {   "name": "hilton",
+            "rooms": "15",
+            "gym": "Yes",
+            "roomTypes": ["Double", "Single", "Small"],
+            "address": "123 S 400 W",
+            "picture": "img/room1.jpg"
+            }
+    ]
+}
