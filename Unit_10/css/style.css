@@ -10,7 +10,7 @@ header,body, main, footer {
 /*header*/
 header {  
     margin: 0 auto;
-   background-image: url("../img/tomb.png");
+   background-image: url("../img/hotel.png");
    height: 200px;
    color: white;
    text-shadow: 0px 0px 28px #363636; 
@@ -22,11 +22,11 @@ header h1, h2{
 
 /*main*/
 main #head {
-    color:saddlebrown;
+    color:black;
     padding-top: 1rem;
 }
 main #sub {
-    color:saddlebrown;
+    color:black;
     padding: 1rem 0 .5rem 0;
 }
 
@@ -46,7 +46,7 @@ ul.objectives li {
 ul.objectives li:before {
   content: " "; 
   display: block;
-  border: solid 0.8em saddlebrown;
+  border: solid 0.8em darkred;
   border-radius: .2em;
   height: 0;
   width: 0;
@@ -77,44 +77,45 @@ ul.objectives li:after {
 main section {
     display: flex;
     flex-wrap:wrap;
-    justify-content:flex-start;
     flex-direction: column;
 }
 
-#stem {
-    background-color: brown;
+main section p {
+    background-color: darkgrey;
     color:white;
+    max-width: 300px;
     padding:10px 10px;
+    border-radius:25px;
 }
-main section button{
- padding:10px 0px 10px 5px;
- text-align: left;
- 
-}
-main section .feedback{
-    padding:15px 0px 0px 10px;
 
-    
-   }
-   ma
 main section h2{
-    color:saddlebrown;
+    color:darkred;
     padding-top: 20px;  
 }
 
-main section h1{
-    color:saddlebrown;
+main section h3{
+    color:darkred;
+    padding-top: 20px;
+    padding-left: 10px;  
 }
 
-main section .feedback{
-    background-color: #363636;
-    height: 40px;
-    color: white;  
+main section h1{
+    color:darkred;
 }
+main section ul{
+    display: flex;
+
+        list-style-type: none;
+}
+main section ul li a{
+    color:white;
+    background-color: darkred;
+}
+
 
 /*footer*/
 footer {
-    background-color: saddlebrown;
+    background-color: darkred;
     text-align: center;
     padding: .1rem 2%;
     font-size: 18px;
