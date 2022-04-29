@@ -74,18 +74,18 @@ function ElseifTest(){
 
     if (numb === 1){
  
-        document.querySelector("#ifStatement p#if").innerHTML=`Your click is ${numb} and is not the second click :(`
+        document.querySelector("#ifStatement p#if").innerHTML=`You clicked ${numb} times. Just one more click away :|`
         numb++
       
     }
     else if (numb === 2) {
-        document.querySelector("#ifStatement p#if").innerHTML=`Your click is ${numb} and is the <strong>second click</strong> :)`
+        document.querySelector("#ifStatement p#if").innerHTML=`You clicked ${numb} times! <strong>Great job</strong> :)`
         numb++
      
 
     }
     else{
-        document.querySelector("#ifStatement p#if").innerHTML=`Your click is ${numb} and is not the second click :( :(`
+        document.querySelector("#ifStatement p#if").innerHTML=`You clicked ${numb} times. Please refresh the page to restart :(`
         numb++
     }
 }

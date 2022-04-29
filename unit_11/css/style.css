@@ -91,7 +91,7 @@ main section#applist {
 }
 
 main section#applist ul#append {
-    background-color:darkred;
+    background-color:rgb(55, 130, 211);
     color:white;
     min-height: 25px;
     padding:.5rem .5rem;
@@ -102,7 +102,7 @@ main section#applist ul#append {
 }
 
 main section#applist ul#append li{
-    background-color: rgb(55, 130, 211);
+    background-color: darkred;
     justify-content: space-evenly;
     float: left;
     color:white;
@@ -111,7 +111,7 @@ main section#applist ul#append li{
     border-radius:5px;
 }
 main section#applist button#appendLine {
-    background-color: rgb(55, 130, 211);
+    background-color: darkred;
     color:white;
     align-self: center;
     text-align: center;
@@ -119,6 +119,7 @@ main section#applist button#appendLine {
    margin: 2rem 0 8rem 0;
     padding:.5rem 1rem;
     border-radius:5px;
+    font-weight: bold;
 }
 main section#applist button#appendLine a:hover{
     color: rgba(0,0,0,0.8);
@@ -135,7 +136,7 @@ main section#ifStatement {
 }
 
 main section#ifStatement button#elseIf{
-    background-color: rgb(55, 130, 211);
+    background-color: darkred;
     color:white;
     align-self: center;
     text-align: center;
@@ -143,12 +144,13 @@ main section#ifStatement button#elseIf{
    margin: 2rem 0 4rem 0;
     padding:.5rem 1rem;
     border-radius:5px;
+    font-weight: bold;
 }
 main section#ifStatement button#elseIf a:hover{
 color: rgba(0,0,0,0.8);
 }
 main section#ifStatement p#if{
-    background-color: darkred;
+    background-color:rgb(55, 130, 211);
     min-height: 25px;
     color:white;
    margin: .2rem .1rem;
@@ -167,6 +169,7 @@ main section#json {
     margin-bottom: 100px;
     background-color: rgb(55, 130, 211);
     padding-bottom: 20px;
+    border-radius:5px;
 }
 
 main section#json p {
@@ -196,6 +199,7 @@ main section#json button{
     margin: 0 0 0 10px;
    width:250px;
     padding:1rem 10px;
+    border-radius:5px;
 }
 main section#json button a{
     color: rgba(255,255,255,0.9);
@@ -210,7 +214,7 @@ main section#json button a:hover{
 
 /*footer*/
 footer {
-    background-color: darkred;
+    background-color:  darkRed;
     text-align: center;
     padding: .1rem 2%;
     font-size: 18px;
