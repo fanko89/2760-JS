@@ -1,0 +1,16 @@
+{
+    "shopping": [
+        {
+            "name": "clothes",
+            "item1": ["2 long sleeve shirts", "1 short sleeve shirt"],
+            "item2": "2 pairs of pants",
+            "item3": "1 pair of shoes"
+        },
+        {
+            "name": "food",
+            "item1": ["apples", "Orenges", "bananas"],
+            "item2": "dijon mustard",
+            "item3": "milk"
+        }
+    ]
+}

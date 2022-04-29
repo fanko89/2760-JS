@@ -12,7 +12,7 @@
         {"name": "sheraton",
         "rooms": "23",
         "gym": "No",
-        "roomType": ["Large", "Medium", "Small"],
+        "roomTypes": ["Large", "Medium", "Small"],
         "address": "123 S 400 W",
         "picture": "img/room2.jpg"
         },
@@ -20,8 +20,8 @@
         {   "name": "hilton",
             "rooms": "15",
             "gym": "Yes",
-            "roomType": ["Double", "Single", "Small"],
-            "address": "123 S 400 W",
+            "roomTypes": ["Double", "Single", "Small"],
+            "address": "234 N 345 W",
             "picture": "img/room3.jpg"
             }
     ]

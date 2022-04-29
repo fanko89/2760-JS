@@ -1,0 +1,221 @@
+/*CSS Document*/
+body h1, h2, h3, h4, h5, h6, ul, li {
+    margin:0;
+}
+header,body, main, footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/*header*/
+header {  
+    margin: 0 auto;
+   background-image: url("../img/code.jpg");
+   height: 300px;
+   color: white;
+   text-shadow: 0px 0px 28px #363636; 
+}
+
+header h1, h2{
+    padding-left: 10px;
+}
+
+/*main*/
+main #head {
+    color:black;
+    padding-top: 1rem;
+}
+main #sub {
+    color:black;
+    padding: 1rem 0 .5rem 0;
+}
+
+/*check box*/
+ul {
+    padding-bottom: 2rem;
+}
+
+ul.objectives li {
+  font-size: 16px; 
+  list-style-type: none; 
+  margin-bottom: .5em; 
+  padding: 0.25em 0 0 2.5em; 
+  position: relative;
+}
+
+ul.objectives li:before {
+  content: " "; 
+  display: block;
+  border: solid 0.8em darkred;
+  border-radius: .2em;
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: 0.5em;
+  top: 40%; 
+  margin-top: -0.5em;
+}
+
+ul.objectives li:after {
+  content: " ";
+  display: block;
+  width: 0.3em; 
+  height: 0.6em;
+  border: solid white;
+  border-width: 0 0.2em 0.2em 0;
+  position: absolute;
+  left: 1em;
+  top: 40%;
+  margin-top: -0.2em;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*all sections*/
+section h1#secH{
+    padding-left:10px;
+    color:black;
+    padding-top: 1rem;
+}
+
+
+/*add items to list*/
+main section#applist {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 40px;
+}
+
+main section#applist ul#append {
+    background-color:darkred;
+    color:white;
+    min-height: 25px;
+    padding:.5rem .5rem;
+    border-radius:5px;
+    text-align: center;
+    list-style: none;
+
+}
+
+main section#applist ul#append li{
+    background-color: rgb(55, 130, 211);
+    justify-content: space-evenly;
+    float: left;
+    color:white;
+   margin: .2rem .1rem;
+    padding:.5rem 1rem;
+    border-radius:5px;
+}
+main section#applist button#appendLine {
+    background-color: rgb(55, 130, 211);
+    color:white;
+    align-self: center;
+    text-align: center;
+   width:100px;
+   margin: 2rem 0 8rem 0;
+    padding:.5rem 1rem;
+    border-radius:5px;
+}
+main section#applist button#appendLine a:hover{
+    color: rgba(0,0,0,0.8);
+}
+
+
+
+/*click the button twice*/
+main section#ifStatement {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+main section#ifStatement button#elseIf{
+    background-color: rgb(55, 130, 211);
+    color:white;
+    align-self: center;
+    text-align: center;
+   width:100px;
+   margin: 2rem 0 4rem 0;
+    padding:.5rem 1rem;
+    border-radius:5px;
+}
+main section#ifStatement button#elseIf a:hover{
+color: rgba(0,0,0,0.8);
+}
+main section#ifStatement p#if{
+    background-color: darkred;
+    min-height: 25px;
+    color:white;
+   margin: .2rem .1rem;
+    padding:.5rem 1rem;
+    border-radius:5px;
+}
+
+
+
+
+/*json lists*/
+main section#json {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    margin-bottom: 100px;
+    background-color: rgb(55, 130, 211);
+    padding-bottom: 20px;
+}
+
+main section#json p {
+    background-color: rgb(219, 219, 219);
+    color:rgb(0, 0, 0);
+    padding:10px 10px;
+    margin:10px 20px 0 20px;
+    border-radius:5px;
+}
+
+main section#json h2{
+    color:rgb(255, 255, 255);
+    padding: 20px 0 10px 10px;  
+}
+
+
+    main section#json div.shopping {
+       
+        height: 50px;
+    }
+
+
+main section#json button{
+    background-color:darkred;
+    color:white;
+    text-align: center;
+    margin: 0 0 0 10px;
+   width:250px;
+    padding:1rem 10px;
+}
+main section#json button a{
+    color: rgba(255,255,255,0.9);
+    font-size: 1em;
+     font-weight: bold;
+  
+}
+main section#json button a:hover{
+    color: rgba(0,0,0,0.8);
+}
+
+
+/*footer*/
+footer {
+    background-color: darkred;
+    text-align: center;
+    padding: .1rem 2%;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 30px auto;
+    color: white;
+}
