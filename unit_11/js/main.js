@@ -1,6 +1,16 @@
 //header text
 document.querySelector('header > h1').innerText = "Capstone Project"
-document.querySelector('header > h2').innerText = "What I've Learned"
+
+
+//username
+let userName= prompt("what is your name?")
+//let message = "hello " + userName + ", welcome to the best logging in Utah!"
+let message = `Hello ${userName}, Please take a look at my work`
+document.querySelector('#greeting').innerText = message
+
+
+
+//json file
 
 //async await function for fetching data 
 async function getShoppingData(){
